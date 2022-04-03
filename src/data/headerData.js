@@ -1,4 +1,4 @@
-import resume from "../assets/pdf/resume_updated.pdf";
+import resume from "../assets/pdf/UpdatedCV_final.pdf";
 // import { pro_pic } from "./pro_pic";
 
 export const headerData = {
