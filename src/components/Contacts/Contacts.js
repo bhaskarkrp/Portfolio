@@ -26,6 +26,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { socialsData } from "../../data/socialsData";
 import { contactsData } from "../../data/contactsData";
 import "./Contacts.css";
+import emailjs from "@emailjs/browser";
 
 function Contacts() {
   const [open, setOpen] = useState(false);
@@ -140,16 +141,23 @@ function Contacts() {
           message: message,
         };
 
-        axios.post(contactsData.sheetAPI, responseData).then((res) => {
-          console.log("success");
-          setSuccess(true);
-          setErrMsg("");
+        emailjs
+          .sendForm(
+            `service_dpwan59`,
+            "template_7ype3iv",
+            responseData,
+            "-gMoZYCgsxU1qRDJD"
+          )
+          .then((res) => {
+            console.log("success");
+            setSuccess(true);
+            setErrMsg("");
 
-          setName("");
-          setEmail("");
-          setMessage("");
-          setOpen(false);
-        });
+            setName("");
+            setEmail("");
+            setMessage("");
+            setOpen(false);
+          });
       } else {
         setErrMsg("Invalid email");
         setOpen(true);
