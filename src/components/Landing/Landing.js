@@ -7,7 +7,7 @@ import "./Landing.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
-import proPic from "./img/professional1.jpeg";
+import proPic from "./img/portfolio_img.jpeg";
 // import proPic from "./img/professional_pic.jpg";
 
 import {
