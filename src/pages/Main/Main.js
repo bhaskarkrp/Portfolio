@@ -25,15 +25,17 @@ function Main() {
         <title>{headerData.name} - Porfolio</title>
       </Helmet>
 
-      <Navbar/>
+      <Navbar />
       <Landing />
       <About />
-      {/* <Education /> */}
+      <Education />
       <Skills />
-      {/* <Experience /> */}
+      <Experience />
       <Projects />
-      {/* <Achievement />
-            <Services /> */}
+      {
+        <Achievement />
+        /*      <Services /> */
+      }
       {/* <Testimonials /> */}
       {/* <Blog /> */}
       <Contacts />

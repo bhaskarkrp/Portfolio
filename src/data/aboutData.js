@@ -1,8 +1,8 @@
 export const aboutData = {
   title: "Who I am",
   description1:
-    "As you know now, my name is Bhaskar Kumar and I'm a Mern stack web developer based in India.",
+    "As you know now, my name is Bhaskar Kumar and I'm a MERN-stack web developer based in India.",
   description2:
-    "I love to learn and explore new areas. I am highly-proficient in MERN stack and eager to learn and ready to contribute to the development of an organization and also open to work as a freelancer.",
+    "I have a passion for automating processes, discovering efficient solutions, and constantly learning. I am eager to delve into the areas of Software Engineering, Web Development and new frameworks. Open to new opportunities in these fields., I am driven by a passion to creatively tackle data structure and algorithm problems",
   image: 2,
 };
