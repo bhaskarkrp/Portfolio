@@ -14,6 +14,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
+  FaCode,
   FaYoutube,
   FaBlogger,
 } from "react-icons/fa";
@@ -104,6 +105,15 @@ function Landing() {
                 />
               </a>
             )}
+            {socialsData.leetcode && (
+              <a href={socialsData.leetcode} target="_blank" rel="noreferrer">
+                <FaCode
+                  className="landing--social"
+                  style={{ color: theme.secondary }}
+                  aria-label="Twitter"
+                />
+              </a>
+            )}
             {/* {socialsData.youtube && (
               <a href={socialsData.youtube} target="_blank" rel="noreferrer">
                 <FaYoutube
@@ -155,7 +165,7 @@ function Landing() {
                       e.preventDefault();
 
                       window.open(
-                        "https://drive.google.com/file/d/1qCPnMi6gCqIj0cT43D1H7ve5AbKoT_TR/view?usp=sharing",
+                        "https://drive.google.com/file/d/1N6ICzmAXzE4yDfi74xsUR76IFc4YKUlu/view?usp=sharing",
                         "_blank"
                       );
                     }}
