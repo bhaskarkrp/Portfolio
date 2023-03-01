@@ -3,10 +3,12 @@ import { NavHashLink as NavLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
 import { IoMenuSharp, IoHomeSharp } from "react-icons/io5";
 import { HiDocumentText } from "react-icons/hi";
+import { GiAchievement } from "react-icons/gi";
 import { BsFillGearFill } from "react-icons/bs";
+import { MdWork } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
 import { FaTools } from "react-icons/fa";
-import { FaUser, FaFolderOpen } from "react-icons/fa";
+import { FaUser, FaUserGraduate } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
@@ -89,7 +91,6 @@ function Navbar() {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-evenly",
-      padding: "0 30px",
       boxSizing: "border-box",
       border: "2px solid",
       borderColor: theme.primary,
@@ -195,6 +196,20 @@ function Navbar() {
             </Fade>
 
             <Fade left>
+              <NavLink
+                to="/#education"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
+                <div className={classes.drawerItem}>
+                  <FaUserGraduate className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Education</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
               <NavLink to="/#skills" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <FaTools className={classes.drawerIcon} />
@@ -226,10 +241,38 @@ function Navbar() {
             </Fade>
 
             <Fade left>
+              <NavLink
+                to="/#experience"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
+                <div className={classes.drawerItem}>
+                  <MdWork className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Experience</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
               <NavLink to="/#projects" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <BsFillGearFill className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Projects</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink
+                to="/#achievement"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
+                <div className={classes.drawerItem}>
+                  <GiAchievement className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Winnings</span>
                 </div>
               </NavLink>
             </Fade>
