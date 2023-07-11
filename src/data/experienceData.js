@@ -1,12 +1,12 @@
 export const experienceData = [
-  // {
-  //   id: 3,
-  //   company: "Freelance",
-  //   jobtitle: "Software Developer",
-  //   startYear: "Feb, 2023",
-  //   endYear: "Present",
-  //   details: ""
-  // },
+  {
+    id: 3,
+    company: "Freelance",
+    jobtitle: "Software Developer",
+    startYear: "2023",
+    endYear: "Present",
+    details: ""
+  },
   {
     id: 2,
     company: "InspironLabs",
