@@ -19,7 +19,7 @@ export const achievementData = {
         "Received recognition for delivering an interactive session on Frontend development, focusing on HTML, CSS, React, and Redux for the Backend team.",
       date: "Jun, 2023",
       field: "InspironLabs",
-      // image: wowAward,
+      image: '',
     },
   ],
 };
