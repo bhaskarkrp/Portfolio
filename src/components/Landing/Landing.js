@@ -7,7 +7,7 @@ import "./Landing.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
-import proPic from "./img/portfolio_img.jpeg";
+import proPic from "./img/profile_prof.png";
 // import proPic from "./img/professional_pic.jpg";
 
 import {
@@ -165,7 +165,7 @@ function Landing() {
                       e.preventDefault();
 
                       window.open(
-                        "https://drive.google.com/file/d/1N6ICzmAXzE4yDfi74xsUR76IFc4YKUlu/view?usp=sharing",
+                        "https://drive.google.com/file/d/11qtHOkbjg88j6G-6TASZZfGwpo7MSq8X/view?usp=sharing",
                         "_blank"
                       );
                     }}
