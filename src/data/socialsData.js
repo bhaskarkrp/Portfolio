@@ -1,6 +1,7 @@
 export const socialsData = {
   github: "https://github.com/bhaskarkrp",
   linkedIn: "https://www.linkedin.com/in/bhaskar-kumar-baa7301a1/",
+  linkedInReccomend: "https://www.linkedin.com/in/bhaskar-kumar-baa7301a1/details/recommendations/?detailScreenTabIndex=0",
   twitter: "https://twitter.com/BhaskarPanjiyar",
   instagram: "https://www.instagram.com/runtime._error._",
   leetcode: "https://leetcode.com/bhaskarkumar0022/",

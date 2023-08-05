@@ -14,10 +14,12 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
-  FaCode,
+  FaTwitter,
   FaYoutube,
   FaBlogger,
 } from "react-icons/fa";
+
+import { SiLeetcode } from "react-icons/si";
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
@@ -105,9 +107,18 @@ function Landing() {
                 />
               </a>
             )}
+            {socialsData.twitter && (
+              <a href={socialsData.twitter} target="_blank" rel="noreferrer">
+                <FaTwitter
+                  className="landing--social"
+                  style={{ color: theme.secondary }}
+                  aria-label="Twitter"
+                />
+              </a>
+            )}
             {socialsData.leetcode && (
               <a href={socialsData.leetcode} target="_blank" rel="noreferrer">
-                <FaCode
+                <SiLeetcode
                   className="landing--social"
                   style={{ color: theme.secondary }}
                   aria-label="Twitter"
