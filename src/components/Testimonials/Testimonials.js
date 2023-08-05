@@ -43,6 +43,7 @@ function Testimonials() {
             {testimonialsData.length > 0 && (
                 <div
                     className='testimonials'
+                    id='testimonials'
                     style={{ backgroundColor: theme.primary }}
                 >
                     <div className='testimonials--header'>

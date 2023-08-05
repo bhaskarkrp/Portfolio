@@ -8,7 +8,7 @@ import {
 
 import { ThemeContext } from "./contexts/ThemeContext";
 import { Main, BlogPage, ProjectPage } from "./pages";
-import { Skills, Education, Experience, Achievement } from "./components";
+import { Skills, Education, Experience, Achievement, Services, Testimonials } from "./components";
 
 import { BackToTop } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -28,11 +28,13 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main} />
           {/* <Route path="/blog" exact component={BlogPage} /> */}
-          <Route path="/projects" exact component={ProjectPage} />
+          <Route path="/#projects" exact component={ProjectPage} />
           <Route path="/#skills" exact component={Skills} />
           <Route path="/#education" exact component={Education} />
           <Route path="/#experience" exact component={Experience} />
           <Route path="/#achievement" exact component={Achievement} />
+          <Route path="/#services" exact component={Services} />
+          <Route path="/#testimonials" exact component={Testimonials} />
 
           <Redirect to="/" />
         </Switch>
