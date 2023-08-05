@@ -12,11 +12,12 @@ import {
   FaBloggerB,
   FaRedditAlien,
   FaStackOverflow,
-  FaCodepen,
+  FaCode,
   FaInstagram,
   FaGitlab,
   FaMediumM,
 } from "react-icons/fa";
+import {SiLeetcode} from "react-icons/si";
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -299,26 +300,6 @@ function Contacts() {
             </div>
 
             <div className="socialmedia-icons">
-              {/* {socialsData.twitter && (
-                <a
-                  href={socialsData.twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaTwitter aria-label="Twitter" />
-                </a>
-              )} */}
-              {socialsData.github && (
-                <a
-                  href={socialsData.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={classes.socialIcon}
-                >
-                  <FaGithub aria-label="GitHub" />
-                </a>
-              )}
               {socialsData.linkedIn && (
                 <a
                   href={socialsData.linkedIn}
@@ -329,6 +310,16 @@ function Contacts() {
                   <FaLinkedinIn aria-label="LinkedIn" />
                 </a>
               )}
+              {socialsData.github && (
+                <a
+                  href={socialsData.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.socialIcon}
+                >
+                  <FaGithub aria-label="GitHub" />
+                </a>
+              )}
               {socialsData.instagram && (
                 <a
                   href={socialsData.instagram}
@@ -337,6 +328,26 @@ function Contacts() {
                   className={classes.socialIcon}
                 >
                   <FaInstagram aria-label="Instagram" />
+                </a>
+              )}
+              {socialsData.twitter && (
+                <a
+                  href={socialsData.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.socialIcon}
+                >
+                  <FaTwitter aria-label="Twitter" />
+                </a>
+              )}
+              {socialsData.leetcode && (
+                <a
+                  href={socialsData.leetcode}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={classes.socialIcon}
+                >
+                  <SiLeetcode aria-label="Twitter" />
                 </a>
               )}
               {/* {socialsData.blogger && (
