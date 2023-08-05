@@ -14,9 +14,9 @@ export const achievementData = {
     },
     {
       id: 2,
-      title: "Training on React JS",
+      title: "Training on React JS and Node JS",
       details:
-        "Received recognition for delivering an interactive session on Frontend development, focusing on HTML, CSS, React, and Redux for the Backend team.",
+        "Received praise conducting a week-long session that covered fundamental to advanced concepts in Frontend and backend development, including hands-on practice. The workshop equipped the Backend(JAVA) team with practical skills in HTML, CSS, React, Redux and Node, enabling them to create and enhance user interfaces and seamlessly integrate them with backend systems.",
       date: "Jun, 2023",
       field: "InspironLabs",
       image: '',
