@@ -137,17 +137,17 @@ function Contacts() {
     if (name && email && message) {
       if (isEmail(email)) {
         const responseData = {
-          name: name,
-          email: email,
+          from_name: name,
+          from_email: email,
           message: message,
         };
 
         emailjs
-          .sendForm(
-            `service_dpwan59`,
-            "template_7ype3iv",
+          .send(
+            `service_cuh4qm8`,
+            "template_spzglp3",
             responseData,
-            "-gMoZYCgsxU1qRDJD"
+            "G1lyVyGCT3gXMAtpf"
           )
           .then((res) => {
             console.log("success");

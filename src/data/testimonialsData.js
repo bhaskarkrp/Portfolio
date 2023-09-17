@@ -25,13 +25,20 @@ export const testimonialsData = [
   },
   {
     id: 3,
+    name: "Asgar",
+    title: "Web developer",
+    text: "I had the privilege of learning JavaScript and React.js from Bhaskar, an exceptional instructor. His deep expertise, patient teaching style, and passion for these technologies made the learning experience truly enjoyable and insightful. I highly recommend Bhaskar for anyone looking to master JavaScript and React.js.",
+    image: boy2
+  },
+  {
+    id: 5,
     name: "Dharmesh Sonar",
     title: "Backend Developer",
     text: "A brilliant Fullstack JavaScript Developer with whom I had the pleasure of working within the same team. His deep knowledge of JavaScript and full-stack development, coupled with his strong work ethic, consistently impressed me. Bhaskar's reliability and dedication have made him a valuable asset to our team, consistently delivering exceptional results. His collaboration and technical skills make him a standout professional.",
     image: boy,
   },
   {
-    id: 4,
+    id: 5,
     name: "Vivek Rajput",
     title: "React Developer",
     text: "I highly recommend Bhaskar for their exceptional skills in JavaScript, React, and Node.js. We collaborated on a project, and I was consistently impressed by their expertise and problem-solving abilities. Bhaskar is a valuable team player, and their code quality was top-notch. Their passion for technology and positive attitude made working together a pleasure. I highly recommend Bhaskar to any team in need of a talented developer.",
