@@ -176,7 +176,7 @@ function Landing() {
                       e.preventDefault();
 
                       window.open(
-                        "https://drive.google.com/file/d/11qtHOkbjg88j6G-6TASZZfGwpo7MSq8X/view?usp=sharing",
+                        "https://drive.google.com/file/d/1RqrZIzcy6BM9zwweHS7L1B3fQUBhQyhX/view?usp=sharing",
                         "_blank"
                       );
                     }}

@@ -5,7 +5,7 @@ export const experienceData = [
     jobtitle: "Software Developer",
     startYear: "2023",
     endYear: "Present",
-    details: ""
+    details: "",
   },
   {
     id: 2,
@@ -13,24 +13,25 @@ export const experienceData = [
     jobtitle: "Software Engineer",
     startYear: "Feb, 2023",
     endYear: "Present",
-    details: `● Worked on a product which is aimed at offering top-notch SEO services. I developed features that allow customers to create non-existing web pages by providing a tentative URL. Customers can enhance the content and keywords of these web pages, With the aid of Integrated AI. Furthermore, they have the capability to compare the strength of their content and keywords with their top five competitors, gaining insights into specific areas of strength and areas that require improvement. This comparison and evaluation take into account the user's country and language.
+    details: `● Led comprehensive training sessions for the Java backend team, equipping them with expertise in React.js and Node.js. Leveraged mentorship capabilities to guide the team seamlessly into project deployment. 
     <br/><br/>
-    Additionally, resolved multiple production issues as part of contributions to the project.`,
+    ● Worked on a product which is aimed at offering top-notch SEO services to websites from writing content to compare the content with their top five competitors.
+    <br/><br/>
+    ● Working on USA's largest Health Care product(UHC)
+    <br/><br/>`,
   },
   {
     id: 1,
     company: "Snapdeal",
-    jobtitle: "Graduate Engineer Trainee",
+    jobtitle: "Software Engineer - 1",
     startYear: "May, 2022",
     endYear: "Feb, 2023",
-    details: `Was part of the team who derives A/B. Worked on the development of a real-time chat application that aimed at resolving customers' problems related to orders.
+    details: `● Achieved an impressive quarterly expense reduction of 11 lakhs, bolstering organizational profitability through strategic cost-cutting measures.
     <br/><br/>
-    ● Implemented a modification to the chat assignment logic for agents.
+    ● Optimized user experience by automating the chat panel process, delivering efficiency gains and reducing user effort by ~4 seconds, showcasing a commitment to seamless interactions.
     <br/><br/>
-    ● Implemented the feature for administrators to set reminder messages on corresponding time intervals.
+    ● Was part of the team who derives A/B. Worked on the development of a real-time chat application that aimed at resolving customers' problems related to orders. 
     <br/><br/>
-    ● Fixed many bugs in production and improved the existing functionality. 
-    <br/><br/>
-    ● Also participated in the migration from a proprietary platform to an open-source one (Chatwoot) which resulted in significant cost savings of 11 lakhs per quarter.`,
+    ● Migrated the chat application from a proprietary platform to the open-source Chatwoot, ensuring a seamless transition with zero data loss. Implemented robust logging mechanisms to monitor application performance, contributing to increased profitability through enhanced operational efficiency.`,
   },
 ];

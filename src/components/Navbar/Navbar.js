@@ -228,7 +228,7 @@ function Navbar() {
                       e.preventDefault();
 
                       window.open(
-                        "https://drive.google.com/file/d/1eMdDdac6-SY8z_dRuLanvrSADcfth5cF/view",
+                        "https://drive.google.com/file/d/1RqrZIzcy6BM9zwweHS7L1B3fQUBhQyhX/view?usp=sharing",
                         "_blank"
                       );
                     }}
