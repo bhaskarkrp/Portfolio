@@ -27,7 +27,8 @@ function Skills() {
       </div>
       <div className="skillsContainer">
         <div className="skill--scroll">
-          <Marquee
+          {/* scroll animation */}
+          {/* <Marquee
             gradient={false}
             speed={80}
             pauseOnHover={true}
@@ -35,6 +36,7 @@ function Skills() {
             delay={0}
             play={true}
             direction="left"
+            flexWrap="wrap"
           >
             {skillsData.map((skill, id) => (
               <div className="skill--box" key={id} style={skillBoxStyle}>
@@ -42,7 +44,18 @@ function Skills() {
                 <h3 style={{ color: theme.tertiary }}>{skill}</h3>
               </div>
             ))}
-          </Marquee>
+          </Marquee> */}
+
+          <div
+            className="skill-flex-container"
+          >
+            {skillsData.map((skill, id) => (
+              <div className="skill--box" key={id} style={skillBoxStyle}>
+                <img src={skillsImage(skill)} alt={skill} />
+                <h3 style={{ color: theme.tertiary }}>{skill}</h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

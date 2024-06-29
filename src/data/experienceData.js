@@ -11,27 +11,30 @@ export const experienceData = [
     id: 2,
     company: "InspironLabs",
     jobtitle: "Software Engineer",
-    startYear: "Feb, 2023",
+    startYear: "Feb 2023",
     endYear: "Present",
-    details: `● Led comprehensive training sessions for the Java backend team, equipping them with expertise in React.js and Node.js. Leveraged mentorship capabilities to guide the team seamlessly into project deployment. 
+    details: `● Enhanced an advanced SEO product, integrating content creation and competitive content analysis, leading to a 30% increase in search engine rankings.
     <br/><br/>
-    ● Worked on a product which is aimed at offering top-notch SEO services to websites from writing content to compare the content with their top five competitors.
+    ● Utilized analytics tools to monitor and optimize website performance, reducing load time by 20% and improving user engagement.
     <br/><br/>
-    ● Working on USA's largest Health Care product(UHC)
-    <br/><br/>`,
+    ● Led the development of the Navigator from scratch for Optum, the largest healthcare product provider in the USA (UHC), resulting in a 25% increase in user satisfaction.
+    <br/><br/>
+    ● Employed agile methodologies to manage project timelines and deliverables, optimizing performance and creating an excellent user interface, reducing user errors by 15%.
+    <br/><br/>
+    ● Managed a team of eight developers, providing guidance and support to achieve project goals.Facilitated daily stand-ups, sprint planning, and retrospectives to maintain agile workflows.`,
   },
   {
     id: 1,
     company: "Snapdeal",
-    jobtitle: "Software Engineer - 1",
-    startYear: "May, 2022",
-    endYear: "Feb, 2023",
-    details: `● Achieved an impressive quarterly expense reduction of 11 lakhs, bolstering organizational profitability through strategic cost-cutting measures.
+    jobtitle: "Software Engineer",
+    startYear: "May 2022",
+    endYear: "Feb 2023",
+    details: `● Improved a real-time chat application to resolve customer order issues, achieved an impressive quarterly expense reduction of 11 lakhs, bolstering organizational profitability through migrating from a proprietary platform to open-source with 0 data loss.
     <br/><br/>
-    ● Optimized user experience by automating the chat panel process, delivering efficiency gains and reducing user effort by ~4 seconds, showcasing a commitment to seamless interactions.
+    ● Developed a metrics page for administrators to monitor average resolution and first response times for agent chats, including time range filters for improved analysis. Improved efficiency by 40% by eliminating dependency on external analytics tools, and streamlining the monitoring process.
     <br/><br/>
-    ● Was part of the team who derives A/B. Worked on the development of a real-time chat application that aimed at resolving customers' problems related to orders. 
+    ● Implemented a queue system for excess chats, with users receiving predefined waiting time messages, resulting in a 25% increase in customer satisfaction and a 20% reduction in agent burnout.
     <br/><br/>
-    ● Migrated the chat application from a proprietary platform to the open-source Chatwoot, ensuring a seamless transition with zero data loss. Implemented robust logging mechanisms to monitor application performance, contributing to increased profitability through enhanced operational efficiency.`,
+    ● Developed a feature enabling administrators to set reminder messages and intervals, ensuring timely follow-ups with users. Implemented automatic chat resolution after the final reminder, reducing unresolved tickets by 30% and increasing overall customer response rates by 20%.`,
   },
 ];

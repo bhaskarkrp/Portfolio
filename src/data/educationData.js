@@ -1,8 +1,8 @@
 export const educationData = [
   {
     id: 1,
-    institution: "B. P. Poddar Institute of management and Technology, Kolkata",
-    course: "Bachelor of Technology",
+    institution: "B. P. Poddar Institute of Management and Technology, Kolkata",
+    course: "Bachelor of Technology (ECE)",
     startYear: "2018",
     endYear: "2022",
   },

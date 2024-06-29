@@ -1,4 +1,4 @@
-import resume from "../assets/pdf/Bhaskar_Kumar_2711.pdf";
+import resume from "../assets/pdf/Bhaskar_ATS_updated.pdf";
 // import { pro_pic } from "./pro_pic";
 
 export const headerData = {
