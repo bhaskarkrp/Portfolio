@@ -33,8 +33,11 @@ function About() {
             {aboutData.description1}
             <br />
             <br />
-            {aboutData.description2}
           </p>
+          <p
+            style={{ color: theme.tertiary80 }}
+            dangerouslySetInnerHTML={{ __html: aboutData.description2 }}
+          />
         </div>
         <div className="about-img">
           <img
