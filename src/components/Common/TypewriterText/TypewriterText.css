@@ -1,0 +1,19 @@
+.container {
+  min-height: "200px";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  background-color: "#f3f4f6";
+  padding: "2rem";
+  border-radius: "8px";
+}
+.text {
+  font-size: "3rem !important";
+  font-family: "monospace";
+  position: "relative";
+}
+.cursor {
+  display: "inline-block";
+  margin-left: "2px";
+  animation: "blink 1s step-end infinite";
+}
