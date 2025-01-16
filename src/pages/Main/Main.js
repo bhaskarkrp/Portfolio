@@ -17,6 +17,7 @@ import {
   Achievement,
 } from "../../components";
 import { headerData } from "../../data/headerData";
+import BackgroundAnimation from "../../components/Common/BackgroundAnimation/BackgroundAnimation";
 
 function Main() {
   return (
@@ -24,15 +25,15 @@ function Main() {
       <Helmet>
         <title>{headerData.name} - Porfolio</title>
       </Helmet>
-
+      <BackgroundAnimation />
       <Navbar />
       <Landing />
       <About />
-      <Education />
-      <Skills />
       <Experience />
-      <Projects />
+      <Skills />
       {<Achievement />}
+      <Projects />
+      <Education />
       {<Services />}
       {<Testimonials />}
       {/* {<Blog />} */}

@@ -20,6 +20,7 @@ import {
 } from "react-icons/fa";
 
 import { SiLeetcode } from "react-icons/si";
+import TypewriterText from "../Common/TypewriterText/TypewriterText";
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
@@ -37,13 +38,31 @@ function Landing() {
       fontFamily: "var(--primaryFont)",
       border: `3px solid ${theme.primary}`,
       transition: "100ms ease-out",
+      position: "relative",
+      overflow: "hidden",
       "&:hover": {
         backgroundColor: theme.tertiary,
         color: theme.secondary,
         border: `3px solid ${theme.tertiary}`,
       },
+      "&::before": {
+        // Added shine effect
+        content: '""',
+        position: "absolute",
+        top: 0,
+        left: "-100%",
+        width: "15%",
+        height: "100%",
+        background: `linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.3), transparent)`,
+        animation: "$shine 2.5s infinite linear",
+      },
       [t.breakpoints.down("sm")]: {
         width: "180px",
+      },
+    },
+    "@keyframes shine": {
+      "100%": {
+        left: "200%",
       },
     },
     contactBtn: {
@@ -159,8 +178,8 @@ function Landing() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="lcr--content" style={{ color: theme.tertiary }}>
-            <h6>{headerData.title}</h6>
-            <h1>{headerData.name}</h1>
+            <h1>{headerData.smallIntro}</h1>
+            <TypewriterText texts={headerData.title} />
             <p>{headerData.desciption}</p>
 
             <div className="lcr-buttonContainer">
