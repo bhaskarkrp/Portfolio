@@ -34,10 +34,10 @@ const TypewriterText = ({ texts = [] }) => {
 
   return (
     <div className="container">
-      <p className="text" style={{color: theme.primary}}>
+      <h2 className="text" style={{color: theme.primary}}>
         {displayedText}
         <span className="cursor"> |</span>
-      </p>
+      </h2>
     </div>
   );
 };

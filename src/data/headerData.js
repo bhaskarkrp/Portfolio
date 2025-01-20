@@ -8,7 +8,7 @@ export const headerData = {
     "A Frontend Engineer",
     "A React.js Developer",
     "A Next.js Developer",
-    "Who love creating cool stuff",
+    "Who loves creating cool stuff",
     "Let's build something together!",
   ],
   desciption:
