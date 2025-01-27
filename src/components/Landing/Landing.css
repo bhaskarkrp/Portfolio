@@ -143,6 +143,10 @@
     --img-size: 300px;
   }
 
+  .blurry-name {
+    font-size: 2.5rem !important;
+  }
+
   .landing--social {
     font-size: 30px;
   }
@@ -229,10 +233,19 @@
   .lcr--content {
     margin-top: 35%;
   }
+
+  .blurry-name {
+    font-size: 2rem !important;
+  }
 }
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .lcr--content {
     margin-top: 60%;
+  }
+
+  .blurry-name {
+    font-size: 2rem !important;
+    margin-top: 50px !important;
   }
 }
 
