@@ -21,6 +21,7 @@ import {
 
 import { SiLeetcode } from "react-icons/si";
 import TypewriterText from "../Common/TypewriterText/TypewriterText";
+import BlurText from "../Common/BlurText";
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
@@ -178,7 +179,15 @@ function Landing() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="lcr--content" style={{ color: theme.tertiary }}>
-            <h1>{headerData.smallIntro}</h1>
+            <BlurText
+              text={headerData.smallIntro}
+              delay={400}
+              animateBy="words"
+              direction="top"
+              // onAnimationComplete={handleAnimationComplete}
+              className="blurry-name"
+            />
+            {/* <h1>{headerData.smallIntro}</h1> */}
             <TypewriterText texts={headerData.title} />
             <p>{headerData.desciption}</p>
 

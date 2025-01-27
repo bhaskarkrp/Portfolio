@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.blurry-name {
+  font-size: 3.5rem !important;
+  margin-bottom: 5px !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
 .landing--container {
   display: flex;
   align-items: center;
