@@ -5,6 +5,7 @@ const BlurText = ({
   text = "",
   delay = 200,
   className = "",
+  styles={},
   animateBy = "words", // 'words' or 'letters'
   direction = "top", // 'top' or 'bottom'
   threshold = 0.1,
@@ -48,7 +49,9 @@ const BlurText = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(ref.current);
+          // observer.unobserve(ref.current);
+        }else {
+          setInView(false);
         }
       },
       { threshold, rootMargin }
@@ -83,12 +86,13 @@ const BlurText = ({
   );
 
   return (
-    <p ref={ref} className={`blur-text ${className}`}>
+    <p ref={ref} style={{ ...styles }} className={`blur-text ${className}`}>
       {springs.map((props, index) => (
         <animated.span
           key={index}
           style={{
             ...props,
+            ...styles,
             display: "inline-block",
             willChange: "transform, filter, opacity",
           }}
