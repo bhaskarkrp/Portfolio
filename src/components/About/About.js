@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import "./About.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { aboutData } from "../../data/aboutData";
+import BlurText from "../Common/BlurText";
 
 function About() {
   const { theme } = useContext(ThemeContext);
@@ -28,7 +29,16 @@ function About() {
       </div>
       <div className="about-body">
         <div className="about-description">
-          <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
+          <BlurText
+            text={aboutData.title}
+            delay={400}
+            animateBy="words"
+            direction="top"
+            styles={{ color: theme.primary }}
+            // onAnimationComplete={handleAnimationComplete}
+            className="blurry-name"
+          />
+          {/* <h2 style={{ color: theme.primary }}>{aboutData.title}</h2> */}
           <p style={{ color: theme.tertiary80 }}>
             {aboutData.description1}
             <br />

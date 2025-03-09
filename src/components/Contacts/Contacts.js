@@ -17,7 +17,7 @@ import {
   FaGitlab,
   FaMediumM,
 } from "react-icons/fa";
-import {SiLeetcode} from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -28,6 +28,7 @@ import { socialsData } from "../../data/socialsData";
 import { contactsData } from "../../data/contactsData";
 import "./Contacts.css";
 import emailjs from "@emailjs/browser";
+import BlurText from "../Common/BlurText";
 
 function Contacts() {
   const [open, setOpen] = useState(false);
@@ -176,7 +177,16 @@ function Contacts() {
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="contacts--container">
-        <h1 style={{ color: theme.primary }}>Contacts</h1>
+        <BlurText
+          text={"Contacts"}
+          delay={400}
+          animateBy="words"
+          direction="top"
+          styles={{ color: theme.primary }}
+          // onAnimationComplete={handleAnimationComplete}
+          className="blurry-name"
+        />
+        {/* <h1 style={{ color: theme.primary }}>Contacts</h1> */}
         <div className="contacts-body">
           <div className="contacts-form">
             <form onSubmit={handleContactForm}>

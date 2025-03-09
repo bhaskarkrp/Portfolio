@@ -46,7 +46,7 @@
     height: fit-content;
 }
 
-.about-description >h2 {
+.about-description > .blurry-name {
     margin-bottom: 40px;
     font-size: 3.5rem;
     font-family: var(--primaryFont);
@@ -70,7 +70,7 @@
 
 @media (min-width: 992px) and (max-width: 1380px) {
 
-    .about-description > h2 {
+    .about-description > .blurry-name {
       font-size: 3.3rem;
       margin-bottom: 30px;
     }
@@ -105,7 +105,7 @@
 
     }
 
-    .about-description > h2 {
+    .about-description > .blurry-name {
         font-size: 3rem;
         margin-bottom: 20px;
     }
@@ -127,7 +127,7 @@
     height: 8px;
     border-radius: 50%;
   }
-  .about-description > h2{
+  .about-description > .blurry-name{
     align-self: center;
   }
 
@@ -146,7 +146,7 @@
     border-radius: 10px;
   }
 
-  .about-description > h2 {
+  .about-description > .blurry-name {
     font-size: 2.5rem;
   }
 

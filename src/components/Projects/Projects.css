@@ -17,7 +17,7 @@
   margin: 1rem;
 }
 
-.projects--header h1 {
+.projects--header .blurry-name {
   margin-bottom: 40px;
   font-size: 3.5rem;
   font-family: var(--primaryFont);
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   row-gap: 100px;
@@ -88,14 +88,14 @@
 }
 
 @media screen and (max-width: 800px) {
-  .projects--header h1 {
+  .projects--header .blurry-name {
     font-size: 3rem;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .projects--header h1 {
+  .projects--header .blurry-name {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }

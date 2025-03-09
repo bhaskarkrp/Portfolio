@@ -13,7 +13,7 @@
     justify-content: center; 
 }
 
-.skillsHeader h2 {
+.skillsHeader .blurry-name {
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: bold;
@@ -104,7 +104,7 @@
         padding: 1rem;
         margin: 1rem 0;
     }
-    .skillsHeader h2 {
+    .skillsHeader .blurry-name {
         font-size: 3.2rem;
     }
     .skill--box {
@@ -133,7 +133,7 @@
     .skillsContainer {
         padding: 0.5rem;
     }
-    .skillsHeader h2 {
+    .skillsHeader .blurry-name {
         font-size: 3rem;
     }
 
@@ -155,7 +155,7 @@
         height: 40px;
     }
 
-    .skillsHeader h2 {
+    .skillsHeader .blurry-name {
         font-size: 2.5rem;
     }
 

@@ -21,7 +21,7 @@
     margin-right: 2rem;
 }
 
-.experience-description > h1 {
+.experience-description > .blurry-name {
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
@@ -120,7 +120,7 @@
         flex: 1;
         margin: auto;
     }    
-    .experience-description > h1{
+    .experience-description > .blurry-name{
         font-size: 3.2rem;
     }
     .experience-card {
@@ -131,7 +131,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .experience-description > h1{
+    .experience-description > .blurry-name{
         font-size: 3rem;
         margin-bottom: 2rem;
         align-self: center;
@@ -170,7 +170,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .experience-description > h1{
+    .experience-description > .blurry-name{
         font-size: 2.5rem;
     }
 }

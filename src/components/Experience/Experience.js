@@ -6,6 +6,7 @@ import './Experience.css';
 
 import { experienceData } from '../../data/experienceData'
 import ExperienceCard from './ExperienceCard';
+import BlurText from '../Common/BlurText';
 
 function Experience() {
 
@@ -17,7 +18,16 @@ function Experience() {
                      <img src={theme.expimg} alt="" />
                  </div>
                  <div className="experience-description">
-                    <h1 style={{color:theme.primary}}>Experience</h1>
+                    <BlurText
+                        text={'Experience'}
+                        delay={400}
+                        animateBy="words"
+                        direction="top"
+                        styles={{ color: theme.primary }}
+                        // onAnimationComplete={handleAnimationComplete}
+                        className="blurry-name"
+                    />
+                    {/* <h1 style={{color:theme.primary}}>Experience</h1> */}
                     {experienceData.map(exp =>(
                         <ExperienceCard 
                             key={exp.id}

@@ -6,6 +6,7 @@ import "./Education.css";
 import EducationCard from "./EducationCard";
 
 import { educationData } from "../../data/educationData";
+import BlurText from "../Common/BlurText";
 
 function Education() {
   const { theme } = useContext(ThemeContext);
@@ -17,7 +18,16 @@ function Education() {
     >
       <div className="education-body">
         <div className="education-description">
-          <h1 style={{ color: theme.primary }}>Education</h1>
+          <BlurText
+            text={"Education"}
+            delay={400}
+            animateBy="words"
+            direction="top"
+            styles={{ color: theme.primary }}
+            // onAnimationComplete={handleAnimationComplete}
+            className="blurry-name"
+          />
+          {/* <h1 style={{ color: theme.primary }}>Education</h1> */}
           {educationData.map((edu) => (
             <EducationCard
               key={edu.id}

@@ -22,7 +22,7 @@
     margin-left: 7%;
 }
 
-.education-description > h1{
+.education-description > .blurry-name{
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
@@ -108,7 +108,7 @@
         flex: 1;
         margin: auto;
     }    
-    .education-description > h1{
+    .education-description > .blurry-name{
         font-size: 3.2rem;
     }
     .education-card {
@@ -119,7 +119,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .education-description > h1{
+    .education-description > .blurry-name{
         font-size: 3rem;
         margin-bottom: 2rem;
         align-self: center;
@@ -158,7 +158,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .education-description > h1{
+    .education-description > .blurry-name{
         font-size: 2.5rem;
     }
 }

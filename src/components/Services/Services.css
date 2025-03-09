@@ -14,7 +14,7 @@
     width: 100%;
 }
 
-.services-header > h1 {
+.services-header > .blurry-name {
     margin-bottom: 20px;
     font-size: 3.5rem;
     font-family: var(--primaryFont);
@@ -78,7 +78,7 @@
     .services {
         padding: 1rem;
     }
-    .services-header h1 {
+    .services-header .blurry-name {
         font-size: 3rem;
         margin-bottom: 30px;
     }
@@ -98,7 +98,7 @@
     .services {
         padding: 0.5rem;
     }
-    .services-header h1 {
+    .services-header .blurry-name {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }

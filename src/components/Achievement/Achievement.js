@@ -4,6 +4,7 @@ import "./Achievement.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { achievementData } from "../../data/achievementData";
 import AchievementCard from "./AchievementCard";
+import BlurText from "../Common/BlurText";
 
 function Achievement() {
   const { theme } = useContext(ThemeContext);
@@ -16,7 +17,16 @@ function Achievement() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="achievement-body">
-            <h1 style={{ color: theme.primary }}>Achievements</h1>
+            <BlurText
+              text={"Achievements"}
+              delay={400}
+              animateBy="words"
+              direction="top"
+              styles={{ color: theme.primary }}
+              // onAnimationComplete={handleAnimationComplete}
+              className="blurry-name"
+            />
+            {/* <h1 style={{ color: theme.primary }}>Achievements</h1> */}
             <h4 style={{ color: theme.tertiary }}>{achievementData.bio}</h4>
           </div>
           <div className="achievement-cards">

@@ -7,6 +7,7 @@ import "./Skills.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { skillsData } from "../../data/skillsData";
 import { skillsImage } from "../../utils/skillsImage";
+import BlurText from "../Common/BlurText";
 
 function Skills() {
   const { theme } = useContext(ThemeContext);
@@ -23,7 +24,16 @@ function Skills() {
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="skillsHeader">
-        <h2 style={{ color: theme.primary }}>Skills</h2>
+        <BlurText
+          text={"Skills"}
+          delay={400}
+          animateBy="words"
+          direction="top"
+          styles={{ color: theme.primary }}
+          // onAnimationComplete={handleAnimationComplete}
+          className="blurry-name"
+        />
+        {/* <h2 style={{ color: theme.primary }}>Skills</h2> */}
       </div>
       <div className="skillsContainer">
         <div className="skill--scroll">
@@ -46,9 +56,7 @@ function Skills() {
             ))}
           </Marquee> */}
 
-          <div
-            className="skill-flex-container"
-          >
+          <div className="skill-flex-container">
             {skillsData.map((skill, id) => (
               <div className="skill--box" key={id} style={skillBoxStyle}>
                 <img src={skillsImage(skill)} alt={skill} />

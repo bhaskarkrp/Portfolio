@@ -6,6 +6,7 @@ import { servicesData } from '../../data/servicesData';
 
 import './Services.css'
 import SingleService from './SingleService/SingleService';
+import BlurText from '../Common/BlurText';
 
 function Services() {
 
@@ -15,7 +16,16 @@ function Services() {
             {servicesData.length > 0 && (
                 <div className="services" id="services" style={{backgroundColor:theme.secondary}}>
                     <div className="services-header">
-                        <h1 style={{color: theme.primary}}>Services</h1>
+                    <BlurText
+                        text={"Services"}
+                        delay={400}
+                        animateBy="words"
+                        direction="top"
+                        styles={{ color: theme.primary }}
+                        // onAnimationComplete={handleAnimationComplete}
+                        className="blurry-name"
+                    />
+                        {/* <h1 style={{color: theme.primary}}>Services</h1> */}
                     </div>
                     <div className="services-body">
                         <p style={{color:theme.tertiary80}}>

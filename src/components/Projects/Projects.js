@@ -8,6 +8,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 import "./Projects.css";
 import SingleProject from "./SingleProject/SingleProject";
+import BlurText from "../Common/BlurText";
 
 function Projects() {
   const { theme } = useContext(ThemeContext);
@@ -50,7 +51,16 @@ function Projects() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="projects--header">
-            <h1 style={{ color: theme.primary }}>Projects</h1>
+            <BlurText
+              text={"Projects"}
+              delay={400}
+              animateBy="words"
+              direction="top"
+              styles={{ color: theme.primary }}
+              // onAnimationComplete={handleAnimationComplete}
+              className="blurry-name"
+            />
+            {/* <h1 style={{ color: theme.primary }}>Projects</h1> */}
           </div>
           <div className="projects--body">
             <div className="projects--bodyContainer">
