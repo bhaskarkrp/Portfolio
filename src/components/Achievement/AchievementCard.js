@@ -23,7 +23,7 @@ function AchievementCard({id, title, details, date, field, image}) {
 
     const classes = useStyles();
     return (
-        <Fade bottom>
+        <Fade left>
            <div key={id} className={`achievement-card ${classes.achievementCard}`}>
                <div className="achievecard-content">
                     <div className="achievecard-details1">

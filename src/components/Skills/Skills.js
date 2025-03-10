@@ -8,6 +8,7 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { skillsData } from "../../data/skillsData";
 import { skillsImage } from "../../utils/skillsImage";
 import BlurText from "../Common/BlurText";
+import { Fade } from "react-reveal";
 
 function Skills() {
   const { theme } = useContext(ThemeContext);
@@ -58,10 +59,12 @@ function Skills() {
 
           <div className="skill-flex-container">
             {skillsData.map((skill, id) => (
+          <Fade left>
               <div className="skill--box" key={id} style={skillBoxStyle}>
                 <img src={skillsImage(skill)} alt={skill} />
                 <h3 style={{ color: theme.tertiary }}>{skill}</h3>
               </div>
+            </Fade>
             ))}
           </div>
         </div>

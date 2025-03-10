@@ -22,6 +22,7 @@ import {
 import { SiLeetcode } from "react-icons/si";
 import TypewriterText from "../Common/TypewriterText/TypewriterText";
 import BlurText from "../Common/BlurText";
+import { Fade } from "react-reveal";
 
 function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
@@ -189,35 +190,42 @@ function Landing() {
             />
             {/* <h1>{headerData.smallIntro}</h1> */}
             <TypewriterText texts={headerData.title} />
-            <p>{headerData.desciption}</p>
+            <Fade right>
+              <p>{headerData.desciption}</p>
 
-            <div className="lcr-buttonContainer">
-              {headerData.resumePdf && (
-                <a
-                // href={headerData.resumePdf}
-                // download="Manasvi_Sharma_Resume"
-                // target="_blank"
-                // rel="noreferrer"
-                >
-                  <Button
-                    onClick={(e) => {
-                      e.preventDefault();
-
-                      window.open(
-                        "https://drive.google.com/file/d/1W5XO6m-uPA11c-PuPYVJTAKOzh1n-3bK/view?usp=sharing",
-                        "_blank"
-                      );
-                    }}
-                    className={classes.resumeBtn}
+              <div className="lcr-buttonContainer">
+                {headerData.resumePdf && (
+                  <a
+                  // href={headerData.resumePdf}
+                  // download="Manasvi_Sharma_Resume"
+                  // target="_blank"
+                  // rel="noreferrer"
                   >
-                    Download CV
-                  </Button>
-                </a>
-              )}
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
-                <Button className={classes.contactBtn}>Contact</Button>
-              </NavLink>
-            </div>
+                    <Button
+                      onClick={(e) => {
+                        e.preventDefault();
+
+                        window.open(
+                          "https://drive.google.com/file/d/1W5XO6m-uPA11c-PuPYVJTAKOzh1n-3bK/view?usp=sharing",
+                          "_blank"
+                        );
+                      }}
+                      className={classes.resumeBtn}
+                    >
+                      Download CV
+                    </Button>
+                  </a>
+                )}
+                <NavLink
+                  to="/#contacts"
+                  smooth={true}
+                  spy="true"
+                  duration={2000}
+                >
+                  <Button className={classes.contactBtn}>Contact</Button>
+                </NavLink>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

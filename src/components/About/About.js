@@ -4,6 +4,7 @@ import "./About.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { aboutData } from "../../data/aboutData";
 import BlurText from "../Common/BlurText";
+import { Fade } from "react-reveal";
 
 function About() {
   const { theme } = useContext(ThemeContext);
@@ -39,15 +40,17 @@ function About() {
             className="blurry-name"
           />
           {/* <h2 style={{ color: theme.primary }}>{aboutData.title}</h2> */}
-          <p style={{ color: theme.tertiary80 }}>
-            {aboutData.description1}
-            <br />
-            <br />
-          </p>
-          <p
-            style={{ color: theme.tertiary80 }}
-            dangerouslySetInnerHTML={{ __html: aboutData.description2 }}
-          />
+          <Fade left>
+            <p style={{ color: theme.tertiary80 }}>
+              {aboutData.description1}
+              <br />
+              <br />
+            </p>
+            <p
+              style={{ color: theme.tertiary80 }}
+              dangerouslySetInnerHTML={{ __html: aboutData.description2 }}
+            />
+          </Fade>
         </div>
         <div className="about-img">
           <img

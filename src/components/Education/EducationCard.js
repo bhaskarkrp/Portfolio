@@ -24,7 +24,7 @@ function EducationCard({ id, institution, course, startYear, endYear }) {
     const classes = useStyles();
 
     return (
-        <Fade bottom>
+        <Fade left>
             <div key={id} className={`education-card ${classes.educationCard}`} >
                 <div className="educard-img" style={{backgroundColor: theme.primary}}>
                     <img src={theme.type === 'light' ? eduImgBlack : eduImgWhite} alt="" />
