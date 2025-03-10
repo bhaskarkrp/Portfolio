@@ -1,10 +1,47 @@
 import ikea_image from "../assets/svg/projects/ikea.png";
 import martine_image from "../assets/svg/projects/travel.png";
 import promptpedia from "../assets/svg/projects/promptpedia.png";
+import tiktok from "../assets/svg/projects/tiktok.png";
+import calenderView from "../assets/svg/projects/calenderView.png";
 
 export const projectsData = [
   {
-    id: 1,
+    id: 5,
+    projectName: "Event Calendar",
+    projectDesc:
+      "Event Calendar is a lightweight and user-friendly web application designed to help users efficiently manage and track events. Built with React, Next.js, and TypeScript, this project provides an intuitive UI for adding, editing, and viewing events in a calendar format.",
+    tags: [
+      "Next.js",
+      "typeScript",
+      "CSS",
+      "calender-view",
+      "localstorage",
+      "zustand",
+    ],
+    code: "https://github.com/bhaskarkrp/Event-Calendar",
+    demo: "https://event-calendar-ten-bice.vercel.app/",
+    image: calenderView,
+  },
+  {
+    id: 4,
+    projectName: "TikTok-clone",
+    projectDesc:
+      "TikTok-clone is a web application that allows users to login/signup, watch and upload short videos",
+    tags: [
+      "Next.js",
+      "typeScript",
+      "CSS",
+      "context-api",
+      "appwrite",
+      "canvas",
+      "zustand",
+    ],
+    code: "https://github.com/bhaskarkrp/TikTok-clone",
+    demo: "https://tik-tok-clone-sigma.vercel.app/",
+    image: tiktok,
+  },
+  {
+    id: 3,
     projectName: "PromptPedia",
     projectDesc:
       "PromptPedia is AI prompting tool for modern world to discover, create and share creative prompts.",
@@ -24,7 +61,7 @@ export const projectsData = [
     image: ikea_image,
   },
   {
-    id: 3,
+    id: 1,
     projectName: "Travel Website clone",
     projectDesc:
       "I created a web application that provides users to choose affordable dream hotel rooms and dinings, using HTML5 and CSS3 Grid Layouts for design and hosted on GitHub Pages.",
