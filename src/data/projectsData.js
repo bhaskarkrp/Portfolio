@@ -3,8 +3,27 @@ import martine_image from "../assets/svg/projects/travel.png";
 import promptpedia from "../assets/svg/projects/promptpedia.png";
 import tiktok from "../assets/svg/projects/tiktok.png";
 import calenderView from "../assets/svg/projects/calenderView.png";
+import recruiterEmailView from "../assets/svg/projects/recruiterEmailView.png";
 
 export const projectsData = [
+  {
+    id: 6,
+    projectName: "Recruiter Email Generator",
+    projectDesc:
+      "A simple and efficient **Recruiter Email Generator** that quickly helps job seekers craft professional emails for recruiters, job applications, referrals, and networking.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix-ui",
+      "Lucide-react",
+      "Zod",
+      "Appwrite"
+    ],
+    code: "https://github.com/bhaskarkrp/Recruiter-Email-Generator",
+    demo: "https://recruiter-email-generator.vercel.app/",
+    image: recruiterEmailView,
+  },
   {
     id: 5,
     projectName: "Event Calendar",
