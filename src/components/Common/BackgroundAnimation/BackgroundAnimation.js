@@ -6,18 +6,18 @@ const BackgroundAnimation = () => {
   const createStar = () => ({
     id: Math.random(),
     left: Math.random() * 100,
-    size: Math.random() * 10 + 2, // Increased minimum size
-    duration: Math.random() * 6 + 2, // Slowed down animation
+    size: Math.random() * 10 + 2,
+    duration: Math.random() * 6 + 2,
     delay: Math.random() * 2,
-    opacity: Math.random() * 0.5 + 0.5, // Increased minimum opacity
+    opacity: Math.random() * 0.5 + 0.5,
+    rotation: Math.random() * 360,
+    trailLength: Math.random() * 50 + 200,
   });
 
   useEffect(() => {
-    // Initialize stars
     const initialStars = Array.from({ length: 30 }, createStar);
     setStars(initialStars);
 
-    // Add new stars periodically
     const interval = setInterval(() => {
       setStars((prevStars) => {
         const filteredStars = prevStars.filter(() => Math.random() > 0.1);
@@ -28,26 +28,31 @@ const BackgroundAnimation = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Create and inject styles
   useEffect(() => {
     const styleSheet = document.createElement("style");
     styleSheet.textContent = `
       .star {
         position: absolute;
-        background: #fff;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
         border-radius: 50%;
         pointer-events: none;
-        animation-name: fall;
+        animation-name: shooting-star;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
+        height: var(--trail-length);
       }
 
-      @keyframes fall {
+      @keyframes shooting-star {
         0% {
-          transform: translateY(-10vh) translateX(-10px);
+          transform: translateY(0) translateX(0) scale(1);
+          opacity: 1;
+        }
+        70% {
+          opacity: 0.8;
         }
         100% {
-          transform: translateY(110vh) translateX(100px);
+          transform: translateY(100vh) translateX(50vw) scale(0.5);
+          opacity: 0;
         }
       }
     `;
@@ -83,6 +88,8 @@ const BackgroundAnimation = () => {
             })`,
             animationDuration: `${star.duration}s`,
             animationDelay: `${star.delay}s`,
+            transform: `rotate(${star.rotation}deg)`,
+            "--trail-length": `${star.trailLength}px`,
           }}
         />
       ))}
