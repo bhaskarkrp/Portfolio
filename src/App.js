@@ -35,6 +35,7 @@ function App() {
           <Route path="/#achievement" exact component={Achievement} />
           <Route path="/#services" exact component={Services} />
           <Route path="/#testimonials" exact component={Testimonials} />
+          <Route path="/projects" exact component={ProjectPage} />
 
           <Redirect to="/" />
         </Switch>

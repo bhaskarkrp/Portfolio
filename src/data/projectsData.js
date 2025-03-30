@@ -10,7 +10,7 @@ export const projectsData = [
     id: 6,
     projectName: "Recruiter Email Generator",
     projectDesc:
-      "A simple and efficient **Recruiter Email Generator** that quickly helps job seekers craft professional emails for recruiters, job applications, referrals, and networking.",
+      "A simple and efficient Recruiter Email Generator that quickly helps job seekers craft professional emails for recruiters, job applications, referrals, and networking.",
     tags: [
       "Next.js",
       "TypeScript",
