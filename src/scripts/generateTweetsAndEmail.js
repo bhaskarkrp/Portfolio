@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { prompt } from "../data/generateTweetPrompt";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAi = new GoogleGenerativeAI("AIzaSyDZP7VvDzO3wptoGyx8yD0bWgX7ZcliJh8");
+const genAi = new GoogleGenerativeAI(process.env.REACT_APP_GEMINI_API_KEY);
 const GeminiClient = genAi.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 class GeminiService {
