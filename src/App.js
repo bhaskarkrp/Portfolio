@@ -8,7 +8,7 @@ import {
 
 import { ThemeContext } from "./contexts/ThemeContext";
 import { Main, BlogPage, ProjectPage } from "./pages";
-import { Skills, Education, Experience, Achievement, Services, Testimonials } from "./components";
+import { Skills, Education, Experience, Achievement, Services, Testimonials, GetTweets } from "./components";
 
 import { BackToTop } from "./components";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -36,6 +36,7 @@ function App() {
           <Route path="/#services" exact component={Services} />
           <Route path="/#testimonials" exact component={Testimonials} />
           <Route path="/projects" exact component={ProjectPage} />
+          <Route path="/get-tweets" exact component={GetTweets} />
 
           <Redirect to="/" />
         </Switch>
