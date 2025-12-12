@@ -21,7 +21,7 @@ export const servicesData = [
   // },
   {
     id: 2,
-    title: "Web Design & Development",
+    title: "Freelance Web Development",
     icon: <BsCodeSlash />,
   },
   // {

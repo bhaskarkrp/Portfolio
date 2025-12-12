@@ -8,11 +8,25 @@ export const experienceData = [
   //   details: "",
   // },
   {
+    id: 3,
+    company: "Nike",
+    jobtitle: "Software Engineer 2",
+    startYear: "Aug 2025",
+    endYear: "Present",
+    details: `● Built a mass-BOM edit capability enabling selection and instant preview of up to <b>60,000 BOMs</b> with <b>no perceptible lag</b> by using virtualization, incremental rendering, and optimized state management.
+    <br/><br/>
+    ● Standardized selection and editing flows with a reusable component library plus comprehensive client-side validation and error handling to prevent invalid submissions and simplify UX.
+    <br/><br/>
+    ● Designed an asynchronous bulk-update pipeline using <b>S3 presigned URLs</b> for uploads and background processing on <b>EKS, ECS, and Lambda</b>, moving heavy work off the UI thread and enabling reliable large-scale updates.
+    <br/><br/>
+    ● Implemented queuing, real-time status updates, safe retry/rollback paths, and integrated the feature into production workflows to increase operator throughput and reduce manual intervention.`,
+  },
+  {
     id: 2,
     company: "InspironLabs",
     jobtitle: "Software Engineer",
     startYear: "Feb 2023",
-    endYear: "Present",
+    endYear: "Aug 2025",
     details: `● <b>Enhanced an advanced SEO product</b>, integrating content creation and competitive content analysis, <b>leading to a 30% increase in search engine rankings</b>.
     <br/><br/>
     ● Utilized analytics tools to monitor and optimize website performance, <b>reducing load time by 20% and improving user engagement</b>.

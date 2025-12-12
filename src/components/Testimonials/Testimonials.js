@@ -48,7 +48,7 @@ function Testimonials() {
           style={{ backgroundColor: theme.primary }}
         >
           <div className="testimonials--header">
-            <h1 style={{ color: theme.secondary }}>Testimonials</h1>
+            <h1 style={{ color: theme.secondary }}>Recommendations</h1>
           </div>
           <div className="testimonials--body">
             <FaQuoteLeft className="quote" style={{ color: theme.secondary }} />

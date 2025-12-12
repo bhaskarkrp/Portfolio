@@ -23,18 +23,18 @@ function Main() {
   return (
     <div>
       <Helmet>
-        <title>{headerData.name} - Porfolio</title>
+        <title>{headerData.name} - Portfolio</title>
       </Helmet>
       <BackgroundAnimation />
       <Navbar />
       <Landing />
       <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Achievement />
       <Services />
+      <Skills />
+      <Experience />
       <Testimonials />
+      <Achievement />
+      <Projects />
       <Education />
       {/* {<Blog />} */}
       <Contacts />
