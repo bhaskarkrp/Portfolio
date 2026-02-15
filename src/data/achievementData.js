@@ -5,6 +5,14 @@ export const achievementData = {
   bio: "Achievements are milestones or accomplishments that demonstrate growth, progress, and success in a particular area of life. They can range from personal, to professional, to societal. Recognizing and celebrating achievements can boost confidence, increase motivation, and provide a sense of fulfillment and satisfaction.",
   achievements: [
     {
+      id: 0,
+      title: "Win as a Team Award",
+      details: `Recognized with Win as a Team Award for building mass-BOM edit capability that saves 4,000 hours annually by enabling bulk operations across 1,000+ BOMs. Designed high-performance governed workflow handling upto 60,000 BOMs with zero lag using virtualization and incremental rendering, directly unblocking sustainability, compliance, and cost initiatives across Nike's FW Development Integration team.`,
+      date: "Jan, 2026",
+      field: "Nike",
+      image: "",
+    },
+    {
       id: 1,
       title: "Shining Star - Annual Award",
       details: `Recognized with the prestigious "Shining Star - Employee of the Year" award, highlighting exceptional
