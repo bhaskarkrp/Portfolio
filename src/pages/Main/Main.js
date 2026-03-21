@@ -8,7 +8,6 @@ import {
   About,
   Skills,
   Testimonials,
-  Blog,
   Education,
   Experience,
   Contacts,

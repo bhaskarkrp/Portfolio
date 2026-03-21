@@ -15,8 +15,6 @@ import {
   FaLinkedin,
   FaGithub,
   FaTwitter,
-  FaYoutube,
-  FaBlogger,
 } from "react-icons/fa";
 
 import { SiLeetcode } from "react-icons/si";
@@ -196,7 +194,7 @@ function Landing() {
               <div className="lcr-buttonContainer">
                 {headerData.resumePdf && (
                   <a
-                  // href={headerData.resumePdf}
+                  href="#resume"
                   // download="Manasvi_Sharma_Resume"
                   // target="_blank"
                   // rel="noreferrer"

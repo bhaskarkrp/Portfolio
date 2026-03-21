@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
 
 import "./Skills.css";
 

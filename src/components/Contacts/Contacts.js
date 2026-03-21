@@ -12,10 +12,8 @@ import {
   FaBloggerB,
   FaRedditAlien,
   FaStackOverflow,
-  FaCode,
   FaInstagram,
   FaGitlab,
-  FaMediumM,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
