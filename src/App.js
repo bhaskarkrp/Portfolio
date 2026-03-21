@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { ThemeContext } from "./contexts/ThemeContext";
-import { Main, BlogPage, ProjectPage } from "./pages";
+import { Main, ProjectPage } from "./pages";
 import { Skills, Education, Experience, Achievement, Services, Testimonials, GetTweets } from "./components";
 
 import { BackToTop } from "./components";
