@@ -30,11 +30,11 @@ const TypewriterText = ({ texts = [] }) => {
 
       return () => clearTimeout(timer);
     }
-  }, [currentTextIndex, currentCharIndex]);
+  }, [currentTextIndex, currentCharIndex, texts]);
 
   return (
     <div className="container">
-      <h2 className="text" style={{color: theme.primary}}>
+      <h2 className="text" style={{ color: theme.primary }}>
         {displayedText}
         <span className="cursor"> |</span>
       </h2>

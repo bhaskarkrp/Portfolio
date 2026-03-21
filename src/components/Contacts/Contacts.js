@@ -1,20 +1,9 @@
 import React, { useContext, useState } from "react";
 import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import axios from "axios";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaYoutube,
-  FaBloggerB,
-  FaRedditAlien,
-  FaStackOverflow,
-  FaInstagram,
-  FaGitlab,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
@@ -147,7 +136,7 @@ function Contacts() {
             `service_cuh4qm8`,
             "template_spzglp3",
             responseData,
-            "G1lyVyGCT3gXMAtpf"
+            "G1lyVyGCT3gXMAtpf",
           )
           .then((res) => {
             console.log("success");
